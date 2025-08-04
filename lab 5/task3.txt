@@ -1,0 +1,9 @@
+
+Type	Meaning
+book	    A single book object
+book*     	A pointer to a book object
+book* b[5]  An array of 5 pointers to book objects
+book**	    A pointer to an array of book pointers
+
+
+Returning b requires book** getbook(), not book* getbook() because b is not a single pointer but a pointer to multiple book pointers.
